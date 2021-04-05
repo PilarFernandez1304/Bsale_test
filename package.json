@@ -8,7 +8,7 @@
     },
   "scripts": {
     "dev": "nodemon server",
-    "start": "node server"
+    "start": "node server/index.js"
   },
   "type": "module",
   "author": "Dely Pilar Fernandez Ccente",
