@@ -20,7 +20,7 @@ db.authenticate()
 
 // definir puerto y host para app
 const host= process.env.HOST || '0.0.0.0'
-const port = process.env.PORT || 4000
+const port = process.env.PORT || 3000
 // habilitar PUG
 app.set('view engine','pug')
 
