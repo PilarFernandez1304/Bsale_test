@@ -2,7 +2,10 @@
   "name": "bsale",
   "version": "1.0.0",
   "description": "Proyecto Bsale",
-  "main": "./server/index.js",
+  "main": "server/index.js",
+  "engines": {
+    "node": "12.11.1"
+    },
   "scripts": {
     "dev": "nodemon server",
     "start": "node ."
