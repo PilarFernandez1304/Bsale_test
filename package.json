@@ -3,9 +3,6 @@
   "version": "1.0.0",
   "description": "Proyecto Bsale",
   "main": "server/index.js",
-  "engines": {
-    "node": "12.11.1"
-    },
   "scripts": {
     "dev": "nodemon server/index.js",
     "start": "node server/index.js"
