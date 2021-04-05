@@ -1,0 +1,7 @@
+extends ./layout/index
+block contenido
+    main.container.mt-5.col-md-10 
+        .row.proximos-viajes        
+            each res in ropa 
+                .col-md-4.col-lg-3.mb-4
+                    include card               

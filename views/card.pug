@@ -1,0 +1,30 @@
+.card( style='width: 18rem;')
+  img.card-img-top(id="myContainer" src=`${res.url_image}`)
+  .card-body
+    h5.card-title=res.name
+    p      
+      svg.icon.icon-tabler.icon-tabler-receipt-2(xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewbox='0 0 24 24' stroke-width='1.5' stroke='#000000' fill='none' stroke-linecap='round' stroke-linejoin='round')
+        path(stroke='none' d='M0 0h24v24H0z' fill='none')
+        path(d='M5 21v-16a2 2 0 0 1 2 -2h10a2 2 0 0 1 2 2v16l-3 -2l-2 2l-2 -2l-2 2l-2 -2l-3 2')
+        path(d='M14 8h-2.5a1.5 1.5 0 0 0 0 3h1a1.5 1.5 0 0 1 0 3h-2.5m2 0v1.5m0 -9v1.5')
+      | #{res.price} $ 
+    p
+      svg.icon.icon-tabler.icon-tabler-shopping-cart-discount(xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewbox='0 0 24 24' stroke-width='1.5' stroke='#000000' fill='none' stroke-linecap='round' stroke-linejoin='round')
+        path(stroke='none' d='M0 0h24v24H0z' fill='none')
+        circle(cx='6' cy='19' r='2')
+        circle(cx='17' cy='19' r='2')
+        path(d='M17 17h-11v-14h-2')
+        path(d='M20 6l-1 7h-13')
+        path(d='M10 10l6 -6')
+        circle(cx='10.5' cy='4.5' r='.5')
+        circle(cx='15.5' cy='9.5' r='.5')
+      | -#{res.discount}% Descuento
+
+
+    a.btn.btn-secondary.btn-block(href='/carrito' onclick="anade") Anadir a Carrito
+      svg.icon.icon-tabler.icon-tabler-shopping-cart(xmlns='http://www.w3.org/2000/svg' width='44' height='44' viewbox='0 0 24 24' stroke-width='1.5' stroke='#00abfb' fill='none' stroke-linecap='round' stroke-linejoin='round')
+        path(stroke='none' d='M0 0h24v24H0z' fill='none')
+        circle(cx='6' cy='19' r='2')
+        circle(cx='17' cy='19' r='2')
+        path(d='M17 17h-11v-14h-2')
+        path(d='M6 5l14 1l-1 7h-13')
