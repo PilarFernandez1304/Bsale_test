@@ -3,7 +3,7 @@ import router from './routers/route.js'
 import db from './config/db.js'
 import morgan from 'morgan'
 import dotenv from 'dotenv';
-dotenv.config({path:"variables.env"})
+dotenv.config({path:".env"})
 
 
 const app = express();

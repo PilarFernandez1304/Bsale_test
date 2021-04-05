@@ -30,7 +30,7 @@ const pageRopa=async (req,res)=>{
             id_category:2
         }
     })
-    res.render('./server/views/ropa',{
+    res.render('ropa',{
         pagina:'Ropa',
         ropa
     });
@@ -46,6 +46,7 @@ const pageComputo=async (req,res)=>{
         computo
     })
 }
+
 const pageJuguetes=async(req,res)=>{
     const juguetes  = await Product.findAll({
         where:{
