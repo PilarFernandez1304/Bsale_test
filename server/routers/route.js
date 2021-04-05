@@ -5,7 +5,7 @@ import {searchProduct} from '../controllers/search.js'
 
 
 // req- lo que emviamos res - lo que express responde
-router.get('/',pageHome)
+router.get('/home',pageHome)
 
 router.get('/search',searchProduct)
 
